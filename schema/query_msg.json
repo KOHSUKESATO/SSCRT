@@ -12,10 +12,14 @@
           "type": "object",
           "required": [
             "address",
+            "key",
             "path"
           ],
           "properties": {
             "address": {
+              "$ref": "#/definitions/HumanAddr"
+            },
+            "key": {
               "type": "string"
             },
             "path": {
@@ -35,10 +39,14 @@
           "type": "object",
           "required": [
             "address",
+            "key",
             "path"
           ],
           "properties": {
             "address": {
+              "$ref": "#/definitions/HumanAddr"
+            },
+            "key": {
               "type": "string"
             },
             "path": {
@@ -48,5 +56,10 @@
         }
       }
     }
-  ]
+  ],
+  "definitions": {
+    "HumanAddr": {
+      "type": "string"
+    }
+  }
 }
